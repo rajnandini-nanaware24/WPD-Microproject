@@ -1,150 +1,360 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-    <meta charset="UTI-8"/>
-    <meta http-equiv="X-UA Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,0"/>
-    <title>Restaurant website</title>
-    <link rel="style" href="C:\Users\01\Desktop\style.css"/>
-    <script
-    src=""
-    crossorigin="anonymous"></script>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
     
+    <script src="Restaurant%20Website_files/7a4b62b0a4.js" crossorigin="anonymous"></script><style media="all" id="fa-v4-font-face">/*!
+ 
+	<style>
+	@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+/* Navigation */
+
+nav {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  position: sticky;
+  top: 0;
+  margin-bottom: 32px;
+  background: white;
+  padding: 10px;
+  z-index: 50;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bar_icon {
+  font-size: 32px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tag {
+  background-color: #149f39;
+  padding: 5px 10px;
+  color: white;
+  align-self: flex-start;
+}
+
+.hero_content h1 {
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.explore_btn {
+  background: #ffc066;
+  align-self: flex-start;
+}
+
+/* Features Section */
+.features {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.feature {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+}
+.feature img {
+  width: 72px;
+}
+.feature:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Menu Section */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px 0;
+  align-items: center;
+}
+.menu .tag {
+  align-self: center;
+}
+
+.grid-image {
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.grid-image:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.item1 {
+  grid-area: I1;
+}
+.item2 {
+  grid-area: I2;
+}
+.item3 {
+  grid-area: I3;
+}
+.item4 {
+  grid-area: I4;
+}
+.item5 {
+  grid-area: I5;
+}
+.item6 {
+  grid-area: I6;
+}
+.item7 {
+  grid-area: I7;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #fff0db;
+}
+.link_lists h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.news_letter h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.news_letter input {
+  padding: 5px 40px;
+  margin-bottom: 10px;
+}
+.footer_container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon_container {
+  display: flex;
+  gap: 15px;
+  font-size: 32px;
+}
+@media (max-width: 786px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero_image {
+    display: flex;
+    justify-content: center;
+  }
+  .hero_image img {
+    width: 80%;
+  }
+  .hero_content {
+    gap: 10px;
+
+    padding: 0 20px;
+  }
+  .hero_content h1 {
+    font-size: 32px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .grid {
+    padding: 10px;
+  }
+  .grid-image {
+    border-radius: 0px;
+  }
+  .footer_container {
+    flex-direction: column;
+  }
+}
+	</style>
   </head>
   <body>
     <nav>
       <div class="navigation container">
-        <div class="logo_comtainer">
-          <img src="bar_icon.png"alt="logo" width="300px"  height="200px"/>
-          </div>
-          <div class="bar_icon">
-            <i class="fas fa-bars"></i>
-          </div>
+        <div class="logo_container">
+          <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="bar_icon">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </div>
       </div>
     </nav>
-    <!--hero <section-->
-      <div class="container">
+    <!-- Hero Section -->
+    <div class="container">
+      <div class="hero">
         <div class="hero_image">
-          <img src="ice.jpg" alt=" ice"/>
-            </div>
-            <div class="hero_content">
-              <div class="tag">50% off on all products</div>
-              <h1>Enjoy Your Delicious Food</h1>
-              <p>Lorem ipsum dolor sit amet , cinsectetur adipisicing elit
-              voluptates,iste corporis tempore necessitatibus invento</p>
-              <button class="explore_btn">explore Now</button>
-            </div>
-           </div>
-      
+          <img src="indian.jpg" alt="hero image">
+        </div>
+        <div class="hero_content">
+          <div class="tag">50% Off on All Products</div>
+          <h1>Enjoy Your Delicious Food</h1>
+          <button class="explore_btn">Explore Now</button>
+        </div>
+      </div>
       <section class="features">
-        <div class="features">
-          <img src="indian.jpg"alt=""/>
-          <div class="features_content">
-            <h3> discount Voucher</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-            </div>
+        <div class="feature">
+          <img src="panipuri.jpg" alt="">
+          <div class="feature_content">
+            <h3>Discount Voucher</h3>
+          </div>
         </div>
-        <div class="features">
-          <img src="bar_icon.png"alt="bar_icon"/>
-          <div class="features_content">
-            <h3>fresh Healthy Food</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-            </div>
-        </div><section class="features">
-        <div class="features">
-          <img src="jamun.jpg"alt="jamun"/>
-          <div class="features_content">
-            <h3>Fast home delivery </h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-            </div>
+        <div class="feature">
+          <img src="salad.jpg" alt="">
+          <div class="feature_content">
+            <h3>Fresh Healthy Food</h3>
+          </div>
         </div>
-        
+        <div class="feature">
+          <img src="misal.jpg" alt="">
+          <div class="feature_content">
+            <h3>Fast Home Delivery</h3>
+          </div>
+        </div>
       </section>
       <div class="divider"></div>
       <div class="menu">
-        <div class="tag ">our menu</div>
-        <h2> explore our menu</h2>
+        <div class="tag"><a href="menu.html">Menu Card</a></div>
+        <h2>Explore Our Menu</h2>
+
         <div class="grid">
-          
           <div class="item1">
-            <img class="khir.jpg"
-            src="khir.jpg"
-            alt="khir"
-            />
-            </div>
-            
-            <div class="item2">
-            <img class="misal"
-            src="misal.jpg"
-            alt="misal"
-            />
-            </div>
-            
-            <div class="vadapav">
-            <img class=""
-            src="vadapav.jpg" 
-            alt=""
-            />
-            </div>
-            
-            <div class="item4">
-            <img class="images"
-            src="images.jpg"
-            alt="images"
-            />
-            </div>
-            
-            <div class="panipuri">
-            <img class=""
-            src="C:\Users\01\Desktop\panipuri.jpg"
-            alt=""
-            />
-            </div>
-            
-            <div class="item6">
-            <img class="grid_image" 
-            src="image/grid_image6.png"
-            alt="image6"
-            />
-            
-            <div class="item7">
-            <img class="grid_image"
-            src="image/grid_image7.png"
-            alt="image7"
-            />
-            </div>
-            </div>
-        </div>
-        </div>
-        </div >
-        </div>
-        <footer>
-          <div class=" footer_container container">
-            <div class="footer_logo">
-              <img src="image/logo.png" alt="logo"/>
-              </div>
-              
-              <div class=" link_lists">
-                <h3>Support</h3>
-                <ul>
-                  <li> About Us </li>
-                  <li>Privacy Policy</li>
-                  <li>Terms & condition</li>
-                </ul>
-              </div>
-              <div class="new_letter">
-                <h3> Support</h3>
-                <input type="email"placeholder="Enter your email..."/>
-                <h3>follow us</h3>
-                <div class="icon_container">
-                  <div class="icon">
-                    <i class="fa facebook">
-                      
-                    </i></i>
-                  </div>
-                </div>
-              </div>
+            <img class="grid-image" src="vadapav.jpg" alt="image 1">
           </div>
-        </footer>
-  </body>
-</html>
+          <div class="item2">
+            <img class="grid-image" src="jamum.jpg" alt="image 2">
+          </div>
+          <div class="item3">
+            <img class="grid-image" src="idli.jpg" alt="image 3">
+          </div>
+          <div class="item4">
+            <img class="grid-image" src="dhokla.jpg" alt="image 4">
+          </div>
+          <div class="item5">
+            <img class="grid-image" src="ice.jpg" alt="image 5">
+          </div>
+          <div class="item6">
+            <img class="grid-image" src="biryani.jpg" alt="image 6">
+          </div>
+          <div class="item7">
+            <img class="grid-image" src="lassi.jpg" alt="image 7">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_container container">
+        <div class="footer_logo">
+          <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="link_lists">
+          <h3><a href=""> Main Links</a></h3>
+          <ul>
+            <li>Order Tracking</li>
+            <li><a href="menu.html">Our Menu Card</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>News & Blogs</li>
+          </ul>
+        </div>
+        <div class="link_lists">
+          <h3>Support</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditons</li>
+          </ul>
+        </div>
+        <div class="news_letter">
+          <h3>Support</h3>
+          <input type="email" placeholder="Enter your Email...">
+          <h3>Follow Us</h3>
+          <div class="icon_container">
+            <div class="icon">
+			<a href="https://www.facebook.com/">
+             <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a></div><a href="https://www.facebook.com/">
+            </a><div class="icon"><a href="https://www.facebook.com/">
+			</a><a href="https://www.twitter.com/">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a></div><a href="https://www.twitter.com/">
+            </a><div class="icon"><a href="https://www.twitter.com/">
+			</a><a href="https://www.instagram.com/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a></div><a href="https://www.instagram.com/">
+            </a><div class="icon"><a href="https://www.instagram.com/">
+			</a><a href="https://www.youtube.com/">
+              <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+</body></html>
